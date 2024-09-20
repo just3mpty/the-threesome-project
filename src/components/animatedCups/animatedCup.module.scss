@@ -1,0 +1,62 @@
+@import "../../app/variables";
+
+.animatedCupsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    @media screen and (max-width: 450px) {
+        gap: 0px;
+    }
+
+    .cupContainer {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        .cup {
+            position: relative;
+            width: 212px;
+            height: 212px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            mix-blend-mode: darken;
+
+            @media screen and (max-width: 450px) {
+                width: 150px;
+                height: 150px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                transition: 0.08s ease-in-out;
+            }
+        }
+
+        .resultText {
+            position: absolute;
+            font-size: 20px;
+            padding: 5px 25px;
+            background-color: $black;
+            font-family: "standrock";
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #fff;
+            border-radius: 50%;
+            pointer-events: none;
+            transition: opacity 0.08s ease-in-out;
+            opacity: 0;
+        }
+
+        &.lifted .resultText {
+            opacity: 1;
+        }
+    }
+}

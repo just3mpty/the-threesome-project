@@ -1,5 +1,7 @@
-import Image from "next/image";
+import AnimatedText from "@/components/animatedText/AnimatedText";
 import styles from "./page.module.scss";
+import Image from "next/image";
+import CupGame from "@/components/animatedCups/CupGame";
 
 const vectors = [
     {
@@ -53,6 +55,19 @@ export default function Home() {
                 <h1>Prêts pour un plan à 3</h1>
                 <p>vous nous et le succès</p>
             </div>
+
+            {/* AFFICHAGES DES CUPS */}
+            <CupGame results={["non", "oui"]} />
+            {/* FIN D'AFFICHAGE DES CUPS */}
+
+            {/* AFFICHAGE DES TEXTES ANIMES */}
+            <AnimatedText textToAnimate="AHHH ATTEND" />
+            <AnimatedText textToAnimate="ARRETE DE SCROLL" delay={0.8} />
+            <AnimatedText
+                textToAnimate="ON VEUT TE PROPOSER UN JEU"
+                delay={1.6}
+            />
+            {/* FIN D'AFFICHAGE DES TEXTES ANIMES */}
         </main>
     );
 }

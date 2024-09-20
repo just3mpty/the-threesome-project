@@ -1,0 +1,83 @@
+@import "../../app/variables";
+
+.animatedText {
+    font-family: "standrock";
+    color: $black;
+    position: absolute;
+
+    .char {
+        display: inline-block;
+        opacity: 1;
+    }
+
+    @media screen and (max-width: 450px) {
+        position: relative;
+    }
+
+    &:nth-of-type(3) {
+        font-weight: 400;
+        font-size: 70px;
+        top: 35px;
+        left: 105px;
+        transform: rotate(-15deg);
+
+        @media screen and (max-width: 1280px) {
+            font-size: 50px;
+        }
+        @media screen and (max-width: 770px) {
+            left: 20px;
+        }
+        @media screen and (max-width: 450px) {
+            transform: none;
+            left: unset;
+            top: unset;
+            right: unset;
+            bottom: unset;
+        }
+    }
+
+    &:nth-of-type(4) {
+        transform: rotate(-4.034deg);
+        top: 222px;
+        left: 17px;
+        font-size: 50px;
+
+        @media screen and (max-width: 1280px) {
+            font-size: 30px;
+            left: 100px;
+        }
+        @media screen and (max-width: 770px) {
+            font-size: 30px;
+            left: 20px;
+        }
+        @media screen and (max-width: 450px) {
+            transform: none;
+            left: unset;
+            top: unset;
+            right: unset;
+            bottom: unset;
+        }
+    }
+    &:nth-of-type(5) {
+        transform: rotate(9.3deg);
+        top: 40px;
+        right: 96.878px;
+        left: unset;
+        font-size: 40px;
+
+        @media screen and (max-width: 1280px) {
+            font-size: 30px;
+        }
+        @media screen and (max-width: 770px) {
+            right: 20px;
+            top: 20px;
+        }
+        @media screen and (max-width: 450px) {
+            transform: none;
+            left: unset;
+            top: unset;
+            right: unset;
+            bottom: unset;
+        }
+    }
+}
