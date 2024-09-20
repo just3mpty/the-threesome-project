@@ -1,0 +1,23 @@
+@import "./variables";
+
+// RESET
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: $background;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

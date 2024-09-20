@@ -1,0 +1,28 @@
+// COLORS
+$background: #cddd20;
+$black: #28282d;
+$accent: #c62369;
+
+// FONTS
+@font-face {
+    font-family: "soulmaze-brush";
+    src: url("./fonts/soulmaze-brush.otf");
+}
+@font-face {
+    font-family: "soulmaze-italic";
+    src: url("./fonts/soulmaze-italic.otf");
+}
+@font-face {
+    font-family: "soulmaze-outline-italic";
+    src: url("./fonts/soulmaze-outline-italic.otf");
+}
+@font-face {
+    font-family: "soulmaze-outline";
+    src: url("./fonts/soulmaze-outline.otf");
+}
+@font-face {
+    font-family: "standrock";
+    src: url("./fonts/standrock.ttf");
+}
+
+// MIXINS
