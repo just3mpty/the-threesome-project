@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Threesome Project
 
-## Getting Started
+## Description
 
-First, run the development server:
+**The Threesome Project** est une démonstration d'interface interactive visant à présenter mes compétences en développement front-end. Le projet a été réalisé dans le cadre d'un test technique pour montrer ma capacité à reproduire fidèlement une maquette fournie, tout en utilisant des technologies modernes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Maquette du site](public/assets/img/maquette.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Fonctionnalités principales
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-   Animation de texte lettre par lettre.
+-   Simulation de mélange de gobelets avec GSAP.
+-   Révélation du texte caché sous un gobelet au clic.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Démo
 
-## Learn More
+Le projet est déployé sur Vercel : [the-threesome-project.vercel.app](https://the-threesome-project.vercel.app)
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies utilisées
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   **PNPM** : Gestionnaire de paquets pour installer les dépendances.
+-   **Next.js** : Framework React pour la génération de pages côté serveur et côté client.
+-   **TypeScript** : Superset de JavaScript pour une meilleure gestion des types.
+-   **Sass** : Préprocesseur CSS pour une gestion avancée des styles.
+-   **GSAP** : GreenSock Animation Platform pour les animations fluides et performantes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Installation
 
-## Deploy on Vercel
+1. Clonez ce dépôt sur votre machine locale :
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    git clone https://github.com/just3mpty/the-threesome-project.git
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Installez les dépendances avec votre gestionnaire de paquets (PNPM recommandé) :
+    ```bash
+    pnpm install
+    ```
+    ```bash
+    npm install
+    ```
+    ```bash
+    yarn install
+    ```
+
+## Déploiement
+
+Le projet est actuellement déployé sur Vercel. Pour toute modification ou mise à jour du déploiement, il suffit de pousser les changements vers le dépôt GitHub, et Vercel s'occupera automatiquement du déploiement continu.
+
+## Remarques
+
+Ce projet ne contient aucun test automatisé. Les fonctionnalités principales sont les animations et l'interaction avec l'interface utilisateur, réalisées avec Next.js, GSAP et TypeScript.
