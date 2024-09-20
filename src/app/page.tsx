@@ -58,7 +58,6 @@ export default function Home() {
 
             {/* AFFICHAGES DES CUPS */}
             <CupGame results={["non", "oui"]} />
-            {/* FIN D'AFFICHAGE DES CUPS */}
 
             {/* AFFICHAGE DES TEXTES ANIMES */}
             <AnimatedText textToAnimate="AHHH ATTEND" />
@@ -67,7 +66,6 @@ export default function Home() {
                 textToAnimate="ON VEUT TE PROPOSER UN JEU"
                 delay={1.6}
             />
-            {/* FIN D'AFFICHAGE DES TEXTES ANIMES */}
         </main>
     );
 }

@@ -14,7 +14,7 @@ const CupGame: React.FC<CupGameProps> = ({ results }) => {
     const [isGameActive, setIsGameActive] = React.useState(true);
     const { width } = useDimension();
 
-    // MELANGE DES CUPS
+    // ANIMATION DE MELANGE DES CUPS
     useEffect(() => {
         const mixCups = () => {
             const timeline = gsap.timeline({
@@ -42,7 +42,7 @@ const CupGame: React.FC<CupGameProps> = ({ results }) => {
                 0
             );
 
-            // CUPS RETOUR A POS. INIT.
+            // CUPS RETOUR A POSITION INITIALE.
             timeline.to(
                 cup1,
                 {

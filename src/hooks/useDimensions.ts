@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+// HOOK PERSO POUR UTILISER LA TAILLE DE LA WINDOW DANS L'APP
 const useDimension = () => {
     const [dimension, setDimension] = useState({ width: 0, height: 0 });
     const updateDimension = () => {

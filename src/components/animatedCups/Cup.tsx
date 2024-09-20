@@ -22,6 +22,7 @@ const Cup: React.FC<CupProps> = ({
         }
     }, [gobletRef, index, cupRefs]);
 
+    // ANIMATION DE "SECOUSSE" DES CUPS.
     useGSAP(() => {
         if (!isClicked && isGameActive) {
             gsap.to(gobletRef.current, {
